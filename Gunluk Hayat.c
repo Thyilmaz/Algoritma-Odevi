@@ -57,7 +57,7 @@ int main() {
 	&ts1.saniye);
 
     // Ikinci tarih ve saat icin kullanici girdisi al
-    printf("Personelin Isten Cıkıs tarihi (YYYY MM DD HH mm ss): ");
+    printf("Personelin Isten Cikis tarihi (YYYY MM DD HH mm ss): ");
     scanf("%d %d %d %d %d %d", 
 	&ts2.yil, 
 	&ts2.ay, 
@@ -74,9 +74,9 @@ int main() {
     double fark = farkiHesapla(epoch1.epoch, epoch2.epoch);
 
     // Sonuclari yazdir
-    printf("Birinci Tarihin epoch zamani: %ld\n", epoch1.epoch);
-    printf("Ikinci Tarihin epoch zamani: %ld\n", epoch2.epoch);
-    printf("Saniye türünden iki Tarih Arasindaki zaman farkı: %.0f\n", fark);
+    printf("Personelin ise girdigindeki Tarihin epoch zamani: %ld\n", epoch1.epoch);
+    printf("Personelin isten ciktigindaki Tarihin epoch zamani: %ld\n", epoch2.epoch);
+    printf("Personelin iste gecirdigi zaman (saniye cinsinden): %.0f\n", fark);
 
     return 0;
 }
